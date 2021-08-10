@@ -1,0 +1,103 @@
+/*
+File: multi.css
+GUI Assignment: Validation Plugin
+Ssuna Mulindwa, UMass Lowell Computer Science, ssuna_mulindwa@student.uml.edu
+Copyright (c) 2021 by ssunaMulindwa. All rights reserved. May be freely copied or
+excerpted for educational purposes with credit to the author.
+updated by SM on August 9, 2021 at 9:23 AM
+
+*/
+
+
+/* background*/
+body{
+    background-color: #C4A484;
+    text-align: center;
+}
+
+h2{
+    text-align: center;
+    color: #4287f5;
+  }
+
+/*Main div with color border */
+.main {
+    margin-left: auto;
+    margin-right: auto;
+    /*margin-left: 10px;*/
+    max-width: 600px;
+    min-width: 20%;
+    padding: 10px;
+    border: 1px solid #800303;
+    background-color: #808080;
+}
+
+
+.link {
+    float: right;
+}
+
+/* Table output */
+#table {
+    max-width: 5%;
+    padding: 10px;
+    margin: 0 auto;
+    float: center;
+}
+/* Table style */
+#style-table {
+    border-spacing: 1px;
+    width: 100%;
+    empty-cells: hide;
+}
+
+/* First Row and Column Color */
+td.header {
+    background-color: black;
+    color: #FFF;
+    border: #FFF 2px thin;
+    padding: 10px;
+    text-align: center;
+    font-size: 12pt;
+    font-family: 'Julius Sans One', sans-serif;
+}
+
+/* Child with blank color in table */
+td.child-blank {
+    text-align: center;
+    border: 2px solid black;
+    padding: 10px;
+    width: 12px;
+    height: 12px;
+    font-size: 12pt;
+}
+
+/* Child with background color in table */
+td.child-color {
+    text-align: center;
+    border: 2px solid black;
+    background-color: #FC886F;
+    padding: 10px;
+    width: 12px;
+    height: 12px;
+    font-size: 12pt;
+}
+
+/*footer */
+#footer {
+    font-style: italic;
+    margin: auto;
+}
+
+/*div in stay in order*/
+.clear{
+    clear: both;
+}
+
+/*jQuery plugin generates error */
+.error {
+  color: red;
+  font-style: italic;
+  font-weight: bold;
+  text-align: center;
+}

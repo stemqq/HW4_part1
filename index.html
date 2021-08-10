@@ -1,0 +1,75 @@
+
+<!DOCTYPE html>
+
+
+<!--
+File: index.html
+GUI Assignment: Validation Plugin
+Ssuna Mulindwa, UMass Lowell Computer Science, ssuna_mulindwa@student.uml.edu
+Copyright (c) 2021 by ssunaMulindwa. All rights reserved. May be freely copied or
+excerpted for educational purposes with credit to the author.
+updated by SM on August 9, 2021 at 9:23 AM
+-->
+
+
+
+<html lang="en-US">
+    <head>
+        <meta charset="UTF-8">
+        <title>Multiplication Table</title>
+        <!-- stylesheets -->
+        <link type="text/css" rel="stylesheet" href="css/multi.css">
+    </head>
+
+    <body>
+        <div class="main">
+            <!-- User input form with Error tag message -->
+            <form id="input-form">
+
+
+              <h2>Multiplication Table</h2>
+              <marquee  height=25px
+               bgcolor="Green"
+               direction="left"
+               loop="">FIll the fields with numerical values between -100 to 100, then hit Submit button to
+                       generate a Dynamic Multiplication Table...</marquee><br><br>
+
+                <p><br>Min Vertical Value: <input type="text" id="fCol" name="fCol" placeholder="Min Column" size="10" value=""></p>
+                <p>Max  Verticle Value: <input type="text" id="lCol" name="lCol" placeholder="Max Column" size="10" value=""></p>
+
+                <p><br>Min Horizontal Value: <input type="text" id="fRow" name="fRow" placeholder="Min Row" size="10" value=""></p>
+                <p>Max Horizontal Value: <input type="text" id="lRow" name="lRow" placeholder="Max Row" size="10" value="" ></p>
+
+
+                <!--Submit Button-->
+                <input type="submit" id="submit" value="Submit" >
+
+                <!--clear Button-->
+                <button onclick="document.getElementById('myInput').value = """>Clear input field</button>
+
+
+
+            </form>
+        </div>
+        <!-- Table output -->
+        <div id='table'></div>
+
+        <br><br>
+        <!--Display footer-->
+        <div class="clear"></div>
+        <div id="footer">
+          <p>Copyright &copy; 2021 </p>
+
+        </div>
+
+
+	<!-- jQuery -->
+  <script src="js/jquery-3.1.1.min.js"></script>
+	<!-- jQuery Validation plugin -->
+  <script src="js/jquery.validate.js"></script>
+  <!--load javascript file-->
+  <script type="text/javascript" src="js/table.js"></script>
+
+
+    </body>
+</html>
